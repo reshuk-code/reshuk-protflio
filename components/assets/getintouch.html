@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../image/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../../global.css">
+    <title>Get In Touch // RESHUK SAPKOTA</title>
+<style>
+
+    button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar d-flex navbar-dark bg-dark">
+        <div id="navbar" class="container d-flex justify-content-between align-items-center">
+          <div id="go-back-btn">
+            <button class="btn go-back-btn" style="border-radius:0; color: #ddd; background: #dddddd67; margin: 20px;">
+              <span class="material-symbols-outlined icon">arrow_back</span>
+            </button>
+          </div>
+        </div>
+    </nav>
+
+
+    <div class="container d-flex align-items-center min-vh-100 bg-light" style="background: linear-gradient(45deg, #40aaaf, #0e468f); border-radius: 30px;">
+        <div class="row w-100 justify-content-center" style="margin: 20px;">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="card shadow-lg p-4 rounded-4 border-8" style="background-color: #ffffffd9; border-radius: 30px;">
+                    <div class="text-center">
+                        <h1 class="mb-3 text-dark fw-bold">Want To Work With ME?!</h1>
+                        <p class="text-muted">Fill up the form below to send us a message.</p>
+                    </div>
+                    <div class="mt-4">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form" novalidate>
+                            <input type="hidden" name="access_key" value="8d8d8981-9abc-42a7-bf9c-e6df809b38c1">
+                            <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                            <input type="checkbox" name="botcheck" id="" style="display: none;">
+    
+                            <!-- First & Last Name Fields -->
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label for="first_name" class="form-label text-muted">First Name <i class="bi bi-person"></i></label>
+                                    <input type="text" name="name" id="first_name" placeholder="John" required class="form-control border-2 rounded-pill px-4 shadow-sm" aria-readonly="true">
+                                    <div class="invalid-feedback">Please provide your first name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lname" class="form-label  text-muted">Last Name <i class="bi bi-person-fill"></i></label>
+                                    <input type="text" name="last_name" id="lname" placeholder="Doe" required class="form-control border-2 rounded-pill px-4 shadow-sm">
+                                    <div class="invalid-feedback">Please provide your last name.</div>
+                                </div>
+                            </div>
+    
+                            <!-- Email & Phone Number Fields -->
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label text-muted">Email Address <i class="bi bi-envelope"></i></label>
+                                    <input type="email" name="email" id="email" placeholder="you@company.com" required class="form-control border-2 rounded-pill px-4 shadow-sm" aria-readonly="true">
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label text-muted">Phone Number <i class="bi bi-telephone"></i></label>
+                                    <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="form-control border-2 rounded-pill px-4 shadow-sm" aria-required="true">
+                                    <div class="invalid-feedback">Please provide your phone number.</div>
+                                </div>
+                            </div>
+    
+                            <!-- Message Field -->
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-muted">Your Message <i class="bi bi-chat-dots"></i></label>
+                                <textarea rows="5" name="message" id="message" placeholder="Your Message" required class="form-control border-2 rounded-3 shadow-sm px-4"></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+    
+                            <!-- Submit Button -->
+                            <div class="mb-4">
+                                <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill shadow" style="background: linear-gradient(90deg, #667eea, #764ba2); border: none;">
+                                    Send Message
+                                </button>
+                            </div>
+    
+                            <p class="text-center text-muted" id="result"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+      // Function to handle going back to the previous page
+      function goBack() {
+        const previousPage = document.referrer; // Gets the URL of the previous page
+        if (previousPage) {
+          window.location.assign(previousPage); // Redirects to the previous page
+        } else {
+          window.location.assign('index.html'); // Fallback in case there's no referrer
+        }
+      }
+      const goBackButton = document.querySelector('.go-back-btn');
+      goBackButton.addEventListener('click', goBack);
+
+   
+
+    </script>
+  
+  <script src="mail.js"></script>
+</body>
+</html>
